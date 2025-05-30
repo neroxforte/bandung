@@ -308,7 +308,7 @@ L.control.locate({
 
 // Layer Jembatan PT
 const jembatanPT = new L.LayerGroup();
-$.getJSON('asset/jembatan_pt.geojson', function(data) {
+$.getJSON('asset/data-spasial/jembatan_pt.geojson', function(data) {
   L.geoJSON(data, {
     pointToLayer: function(feature, latlng) {
       return L.circleMarker(latlng, {
